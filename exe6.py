@@ -9,6 +9,7 @@ print(x)
 print(y)
 
 print (f"I said: {x}")
+# using a single-quote inside a string that has doube quotes.
 print(f"I also said '{y}'")
 
 hilarious = False
