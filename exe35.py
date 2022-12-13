@@ -6,13 +6,13 @@ def gold_room():
   choice = input("> ")
   if "0" in choice or "1" in choice:
     how_much = int(choice)
-   else:
+  else:
     dead("Man, learn to type a number. ")
     
   if how_much < 50:
     print("Nice, you are not greedy, you win!")
     exit(0)
-   else:
+  else:
     dead("You greedy bastard!")
 
 def bear_room():
@@ -31,11 +31,11 @@ def bear_room():
       print("The bear has moved from the door.")
       print("You can go through it now. ")
       bear_moved = True
-     elif choice == "taunt bear" and bear_moved:
+    elif choice == "taunt bear" and bear_moved:
       dead("The bear getspissed off and chews your leg off.")
-     elif choice == "open door" and bear_moved:
+    elif choice == "open door" and bear_moved:
       gold_room()
-     else:
+    else:
       print("I got no idea what that means.")
 
 def cthulthu_room():
@@ -58,7 +58,7 @@ def dead(why):
 
 def start ():
   print("You are in a dark room")
-  print("Yhere is adoor to your right and left.")
+  print("There is a door to your right and left.")
   print("Which one do you take?")
   
   choice = input(">")
